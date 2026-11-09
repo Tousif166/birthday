@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Happy Birthday Rajibul! 🎂🎉 | Grand Finale</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%3E<text y=%2226%22 font-size=%2226%22>🎂</text></svg>">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+        <div class="header-top-row">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-icon">🎂</span>
+                <div class="brand-names">
+                    <span class="title">Chapter 05</span>
+                    <span class="subtitle">Birthday Finale 👑🎉</span>
+                </div>
+            </a>
+
+            <div class="header-actions">
+                <button id="musicToggleBtn" class="action-icon-btn" title="Toggle Birthday Melody">
+                    <div class="music-bars">
+                        <span class="music-wave"></span>
+                        <span class="music-wave"></span>
+                        <span class="music-wave"></span>
+                    </div>
+                    <span>Music</span>
+                </button>
+                <button id="confettiCannonBtn" class="action-icon-btn" title="Celebrate!">
+                    🎉 <span>Pop</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Scrollable Nav Pills -->
+        <div class="nav-scroll-wrapper">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                    <li><a href="chapter1-school.html" class="nav-link">🏫 Class 5</a></li>
+                    <li><a href="chapter2-brotherhood.html" class="nav-link">🤝 Brotherhood</a></li>
+                    <li><a href="chapter3-freefire.html" class="nav-link">🔥 Free Fire</a></li>
+                    <li><a href="chapter4-journey.html" class="nav-link">🎒 Journey</a></li>
+                    <li><a href="chapter5-celebration.html" class="nav-link active">🎂 Birthday</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-wrapper">
+
+        <!-- Chapter Hero Banner -->
+        <div class="chapter-hero" style="text-align: center;">
+            <div class="chapter-breadcrumb" style="justify-content: center;">
+                <a href="index.html">Home</a> &gt; <a href="chapter4-journey.html">Chapter 4</a> &gt; <span>Chapter 5</span>
+            </div>
+            <h1 class="chapter-main-title">Happy Birthday, <span class="gradient-text-gold">Rajibul!</span> 🎂🎉👑</h1>
+            <p class="chapter-subtitle-tag">Dua hai tu hamesha khush rahe aur zindagi me har mukaam haasil kare! 🤲✨</p>
+        </div>
+
+        <!-- 2-Column Content Grid: Photo & Birthday Cake -->
+        <div class="chapter-content-grid">
+
+            <!-- Left: Cake Cutting Photo -->
+            <div class="photo-frame-container">
+                <div class="memory-photo-card" title="Click for celebration hearts!">
+                    <div class="photo-inner-wrapper">
+                        <img src="assets/images/birthday-celebration.jpg" alt="Rajibul cutting birthday cake with friends">
+                        <div class="photo-badge-overlay">
+                            <div>
+                                <div class="photo-caption-title">The Birthday Boy: Rajibul 👑</div>
+                                <div class="photo-caption-tag">Cake Cutting Moments 🎂✨</div>
+                            </div>
+                            <span style="font-size: 1.3rem;">🍰</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="photo-heart-prompt">❤️ Tap photo to shower Rajibul with love!</p>
+
+                <!-- Certificate Button -->
+                <div style="text-align: center; margin-top: 1rem;">
+                    <button id="openCertBtn" class="btn btn-secondary" style="border-color: var(--accent-gold); color: var(--accent-gold); width: 100%;">
+                        📜 Official Brotherhood Certificate
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right: Interactive Virtual Cake Ceremony -->
+            <div class="story-details-column">
+
+                <div class="cake-ceremony-section">
+                    <h2 style="font-size: 1.35rem; margin-bottom: 0.3rem; color: #fff;">
+                        🎂 Virtual Cake Ceremony
+                    </h2>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary);">
+                        1. Light candle &rarr; 2. Wish maango aur phook maaro &rarr; 3. Cake cut karo! 🍰
+                    </p>
+
+                    <!-- Animated Interactive Cake Widget -->
+                    <div class="cake-stage-container">
+                        <!-- Candle -->
+                        <div class="cake-candle-stick" id="cakeCandle">
+                            <div class="candle-flame-spark hidden-flame" id="candleFlame"></div>
+                        </div>
+
+                        <!-- Top Tier -->
+                        <div class="cake-top-tier">
+                            <div class="cake-frosting"></div>
+                        </div>
+
+                        <!-- Base Tier -->
+                        <div class="cake-base">
+                            <div class="cake-frosting"></div>
+                            <div class="cake-slice-piece" id="cakeSlice"></div>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Cake Message -->
+                    <div class="cake-status-message" id="cakeStatusText">
+                        🕯️ Niche diye button par click karke candle jalao bhai!
+                    </div>
+
+                    <!-- Cake Action Buttons -->
+                    <div class="cake-actions-row">
+                        <button id="lightCandleBtn" class="btn btn-primary">
+                            🔥 Light Candle
+                        </button>
+                        <button id="blowCandleBtn" class="btn btn-fire" style="display: none;">
+                            💨 Wish Maango & Phook Maaro!
+                        </button>
+                        <button id="cutCakeBtn" class="btn btn-primary" style="display: none;">
+                            🍰 Cake Cut Karo!
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Personal Letter from Tousif (Short, Warm, Real) -->
+        <section id="personalLetterSection" class="personal-letter-wrapper">
+            <div class="wax-seal-badge" title="Sealed with brotherhood">★</div>
+
+            <div class="letter-salutation">
+                Mere Pyare Bhai Rajibul, ❤️
+            </div>
+
+            <div class="letter-body">
+                <p>
+                    Happy Birthday mere bhai! 🎉🎂 Aaj ka din tere liye bohot special hai, aur mere liye bhi — kyunki aaj ke din mera best friend is duniya me aaya tha! ✨
+                </p>
+                <p>
+                    Class 5 at Galsi High School me jab hum pehli baar mile the 🎒, tab socha nahi tha ki hum dono ki dosti itni tagdi ban jayegi! 💯 Har match me clutch karna, hasna-khelna, aur har musibat me bina bole ek dusre ke saath khada rehna 👊🔥
+                </p>
+                <p>
+                    Dua hai ki Allah tujhe hamesha healthy rakhe, dher saari khushiyan de, aur tera har sapna sach ho! 🤲🚀 Aur haan... Free Fire me aise hi 102 km/h pe hawa me scooter udate rahenge aur Booyah lete rahenge! 😂🛵💨
+                </p>
+                <p>
+                    Always here for you, my brother! Enjoy your special day to the fullest! 👑🎉
+                </p>
+            </div>
+
+            <div class="letter-signature">
+                <div class="closing">Tera bhai & permanent duo partner,</div>
+                <div class="name">Tousif ❤️</div>
+            </div>
+        </section>
+
+        <!-- Birthday Wishes Guestbook -->
+        <section class="wishes-board-section">
+            <div style="text-align: center; margin-bottom: 1.2rem;">
+                <h2 style="font-size: 1.4rem; font-weight: 800;">💌 Birthday Wishes Board</h2>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Rajibul ke liye ek pyara sa birthday wish chhod do! 👇</p>
+            </div>
+
+            <div class="wishes-grid" id="wishesContainer">
+                <!-- Loaded via JS -->
+            </div>
+
+            <!-- Add Wish Form -->
+            <form id="birthdayWishForm" class="wish-input-form">
+                <h3 style="font-size: 1rem; margin-bottom: 0.8rem; color: var(--accent-gold);">✍️ Write a Wish:</h3>
+                <div class="form-group">
+                    <label for="wishAuthor">Tera Naam:</label>
+                    <input type="text" id="wishAuthor" class="form-control" placeholder="e.g. Tousif / School Friend" required>
+                </div>
+                <div class="form-group">
+                    <label for="wishContent">Tera Message:</label>
+                    <textarea id="wishContent" rows="2" class="form-control" placeholder="Kuch mast wish likho Rajibul ke liye..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="margin-top: 0.4rem; width: 100%;">
+                    🚀 Post Wish
+                </button>
+            </form>
+        </section>
+
+        <!-- Chapter Navigation Bar -->
+        <div class="chapter-nav-bar">
+            <a href="chapter4-journey.html" class="nav-ch-btn btn-nav-prev">
+                ← Ch 4: Journey
+            </a>
+            <span class="nav-ch-indicator">5 of 5 • Finale 🎂</span>
+            <a href="index.html" class="nav-ch-btn btn-nav-next">
+                🏠 Home
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal-backdrop">
+        <div class="certificate-card">
+            <div style="font-size: 2.2rem; margin-bottom: 0.3rem;">👑 📜 👑</div>
+            <div class="cert-title">Official Certificate of Brotherhood</div>
+            <div class="cert-sub">Best Friend & Duo Partner Award 🏆</div>
+
+            <div class="cert-awarded-to">Proudly awarded to:</div>
+            <div class="cert-recipient">Rajibul ❤️</div>
+
+            <div class="cert-text">
+                For being the most loyal best friend since <strong>Class 5 at Galsi High School</strong> 🏫, the craziest 102 km/h flying scooter driver in <strong>Free Fire</strong> 🛵💨, and a brother for life! 👊💯
+            </div>
+
+            <div class="cert-signatures">
+                <div class="cert-sig-box">
+                    <div class="cert-sig-name">Tousif</div>
+                    <div class="cert-sig-role">Best Friend & Brother 🤝</div>
+                </div>
+                <div class="cert-sig-box">
+                    <div style="font-size: 1.5rem;">⭐ 🏆 ⭐</div>
+                    <div class="cert-sig-role">Lifelong Seal 💯</div>
+                </div>
+                <div class="cert-sig-box">
+                    <div class="cert-sig-name">Galsi High</div>
+                    <div class="cert-sig-role">Class 5 Squad 🏫</div>
+                </div>
+            </div>
+
+            <div class="cert-modal-actions">
+                <button id="printCertBtn" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+                    🖨️ Print / Save
+                </button>
+                <button id="closeCertBtn" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1rem; color: #111;">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p class="footer-quote">"True friends are never apart, maybe in distance but never in heart."</p>
+        <p class="footer-credits">
+            Made with ❤️ for <strong>Rajibul</strong> by <strong>Tousif</strong>
+        </p>
+    </footer>
+
+    <!-- Audio & Scripts -->
+    <script src="assets/js/audio.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/celebration.js"></script>
+</body>
+</html>
